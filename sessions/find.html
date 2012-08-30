@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Transition2012 Session Finder</title>
+	<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.1.0.css" />
+	<link rel="stylesheet" href="docs/_assets/css/jqm-docs.css" />
+  <link href="jc/jc.css" rel="stylesheet">
+	<script src="js/jquery.js"></script>
+	<script src="docs/_assets/js/jqm-docs.js"></script>
+	<script src="js/jquery.mobile-1.1.0.js"></script>
+  <script src="jc/jc.js"></script>
+
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load('visualization', '1');
+
+      function drawTable() {
+        // Construct query
+        var query = "SELECT 'Title' as Title, 'Presenters' as Presenters, 'Theme Track' as Theme, 'Room' as Room, 'Description' as Description, 'dDay' as Day, 'Time' as Time " +
+            'FROM 1oN-HTFtvBw94_9N4j1WPwcIgrD4AQ8YxMQwJ3uc';
+        var theme = document.getElementById('theme').value;
+        
+        if (theme) {
+          query += " WHERE 'Theme Track' = '" + theme + "' and 'dDay' = '" + fDay + "' and 'Time' = '" + fTime + "'";
+        }
+        else if (sesh) {
+          query += " WHERE 'dDay' = '" + fDay + "'and 'Time' = '" + fTime + "'";
+        }
+       
+        var queryText = encodeURIComponent(query);
+        var gvizQuery = new google.visualization.Query(
+            'http://www.google.com/fusiontables/gvizdata?tq='  + queryText);
+
+        // Send query and draw table with data in response
+        gvizQuery.send(function(response) {
+          var numRows = response.getDataTable().getNumberOfRows();
+          var numCols = response.getDataTable().getNumberOfColumns();
+
+          var ftdata = [''];
+          for (var i = 0; i < numCols; i++) {
+            var columnTitle = response.getDataTable().getColumnLabel(i);
+            
+          }
+          ftdata.push('');
+
+          for (var i = 0; i < numRows; i++) {
+            ftdata.push('<table border="1">');
+            for(var j = 0; j < numCols; j++) {
+              var rowValue = response.getDataTable().getValue(i, j);
+              ftdata.push('<tr><td>' + rowValue + '</td></tr>');
+            }
+            ftdata.push('</table>');
+          }
+          ftdata.push('');
+          document.getElementById('ft-data').innerHTML = ftdata.join('');
+        });
+      }
+
+      google.setOnLoadCallback(drawTable);
+    </script>
+
+</head>
+<body>
+
+<div data-role="page" id="home" data-theme="f">
+
+	<div data-role="content">
+
+		<div id="branding">
+
+		<h1>Transition2012 Session Finder </h1>
+    
+  		</div>
+
+		<div>
+      <strong><script type="text/javascript">
+ document.write(fDay); document.write(" "+fTime);
+</script></strong><br />
+      <label>You are viewing Theme Track:</label>
+      <select id="theme" onchange="drawTable();">
+        <option value="" selected="selected">All</option>
+        <option value="Employment">Employment</option>
+        <option value="Secondary and Post-Secondary Education">Secondary and Post-Secondary Education</option>
+        <option value="Program and Policy Development and Implementation">Program and Policy Development and Implementation</option>
+        <option value="Partnerships that Support Successful Transitions">Partnerships that Support Successful Transitions</option>
+        <option value="Family Engagement">Family Engagement</option>
+        <option value="Youth Development">Youth Development</option>
+      </select>
+    </div>
+    <div id="ft-data"></div>
+
+	</div>
+
+</div><!-- /page -->
+
+
+
+</body>
+
+</HTML>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Mobile: Demos and Documentation</title>
+	<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.1.0.css" />
+	<link rel="stylesheet" href="docs/_assets/css/jqm-docs.css" />
+	<script src="js/jquery.js"></script>
+	<script src="docs/_assets/js/jqm-docs.js"></script>
+	<script src="js/jquery.mobile-1.1.0.js"></script>
+    <script src="jc/jc.js"></script>
+
+	<link href="/apis/fusiontables/docs/samples/style/default.css"
+        rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+
+    
+<script type="text/javascript">
+   google.load('visualization', '1');
+
+function changeData(scorer) {
+  var whereClause = "";
+  if(scorer && fDay) {
+    whereClause = " WHERE 'Theme Track' LIKE '" + scorer + "'";
+  }
+  else if(scorer) {
+    whereClause = " WHERE 'Theme Track' LIKE '" + scorer + "'";
+  }
+  var queryText = encodeURIComponent("SELECT 'Title', 'Presenters', 'Theme Track', 'Description', 'Room' FROM 1oN-HTFtvBw94_9N4j1WPwcIgrD4AQ8YxMQwJ3uc" + whereClause);
+  var query = new google.visualization.Query('http://www.google.com/fusiontables/gvizdata?tq='  + queryText);
+  
+  query.send(getData);
+}
+
+function getData(response) {
+  numRows = response.getDataTable().getNumberOfRows();
+  numCols = response.getDataTable().getNumberOfColumns();
+  
+  fusiontabledata = "<b>";
+  for(i = 0; i < numCols; i++) {
+    
+  }
+  fusiontabledata += "</b><br />";
+  
+  for(i = 0; i < numRows; i++) {
+    for(j = 0; j < numCols; j++) {
+      fusiontabledata += "<br>" + response.getDataTable().getValue(i, j) ;
+    }
+    fusiontabledata += "<hr>";
+  }  
+  document.getElementById('ftdata').innerHTML = fusiontabledata;
+}
+	</script>
+</head>
+<body onload="changeData();">
+
+
+
+	
+
+<div data-role="page" id="home" data-theme="b">
+
+	<div data-role="content">
+
+		<div id="branding">
+
+		<h1>Transition2012 Session Finder </h1>
+    <script type="text/javascript">
+ document.write(fDay);
+</script>
+  		</div>
+
+		Scoring Team: <select id="selections" onchange="changeData(this.value);">
+  <option value="" selected="selected">All</option>
+        <option value="Employment">Employment</option>
+        <option value="Secondary and Post-Secondary Education">Secondary and Post-Secondary Education</option>
+        <option value="Program and Policy Development and Implementation">Program and Policy Development and Implementation</option>
+        <option value="Family Engagement">Family Engagement</option>
+        <option value="Youth Development">Youth Development</option>
+</select>
+<div id="ftdata"></div>
+
+	</div>
+
+</div><!-- /page -->
+
+
+
+</body>
+
+</HTML>

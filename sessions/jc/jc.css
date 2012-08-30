@@ -1,0 +1,31 @@
+
+table{border-collapse:separate;border-spacing:0;vertical-align:middle; margin-top:1.3em; background-color:white;}
+td{padding:.5em;}
+tr:first-child {font-weight:bold;}
+
+html {font-family:verdana; }
+        @media only screen and (min-width: 600px){
+            .ui-page {
+                width: 600px !important;
+                margin: 0 auto !important;
+                position: relative !important;
+                
+            }
+        }
+
+        #branding{  
+  
+background:url(../NTC_mobile.png) no-repeat;  
+  
+width:250px;  
+  
+height:108px;  
+  
+text-indent:-999px;  
+  
+font-size:0px;  
+  
+margin:-10px auto 0 auto;  
+  
+border-bottom:1px solid rgba(65, 38, 37, 0.6);  
+}  

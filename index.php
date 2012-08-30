@@ -36,55 +36,66 @@ include_once "nav.php"; // this will include the top navigation
 			
 			<article>
 				
-<h3>May 30–June 1, 2012<br />
-Washington Marriott Wardman Park<br>
-Washington, DC<br /></h3>
-<p>Registration is now closed. If you are a presenter or panel member who has not registered please contact Berenise Reyes-Albino at berenise.albino@umb.edu or 617-287-4314 as soon as possible. </p>
+<p>The National Transition Conference was held on May 30-June 1, 2012 in Washington
+DC. Attended by over 800 people, the conference offered a diverse array of
+workshops and general sessions.</p>
 
-<div class="alert alert-info" style="overflow: hidden; margin-top:2em;">
-<img src="images/ann_cramer_th.jpg" alt="photo of Ann Cramer" style="padding-right:2em; float:left;" />
-<h3>Keynote: Preparing Today’s Youth for Tomorrow’s Workforce</h3>
-<p><strong>Ann Wilson Cramer</strong><br />
-Director – IBM Americas<br />
-IBM Corporate Citizenship and Corporate Affairs</p>
+<p>This site provides an overview of the conference program; materials provided
+by presenters and captioned video of both the opening session and the keynote
+speaker, Ann Wilson Cramer of IBM.</p>
+
+<h3>Breakout Session Materials</h3>
+
+<p>Breakout session materials have been organized by theme track. Clicking on a
+theme track will take you to a Dropbox folder with the presentation materials or a
+session folder if the presenter provided multiple documents.</p>
+ <p><strong>You can download the
+material or view it in your web browser.</strong></p>
+
+<div class="alert alert-success">
+<ul class="">
+	<li><a href="https://www.dropbox.com/sh/ol0urj1fq1iuytd/t2I_gViLO7">Employment</a></li>
+	<li><a href="https://www.dropbox.com/sh/jr7o4l2drhynk38/nFLEMthquL">Family Engagement</a></li>
+	<li><a href="https://www.dropbox.com/sh/9hui2hxoykbt43p/ePu07eCAvf">Partnerships</a></li>
+	<li><a href="https://www.dropbox.com/sh/sb4dl9ijrb33pnt/BaOq4tTcaf">Poster</a></li>
+	<li><a href="https://www.dropbox.com/sh/4ouz0nhuy64relo/hRAPAWwKQb">Program Policy</a></li>
+	<li><a href="https://www.dropbox.com/sh/admt7taochc75kk/CqdCEb4onc">Secondary and Postsecondary Education</a></li>
+	<li><a href="https://www.dropbox.com/sh/02r66htb9wpyerm/iayaRmxc2x">Student Development</a></li>
+	<li><a href="https://www.dropbox.com/sh/audip6x2lmb8ftp/a7flSTeQoo">Unknown</a></li>
+</ul>
 </div>
-<hr />
-<p><a href="sessions/"><img src="sessions/NTC_mobile.png" alt="NTC mobile logo" style="padding-right:2em; float:left;" /></a> The conference program will include over 90 exciting and informative breakout sessions.  Check out our <strong><a href="sessions/">session finder mobile app</a></strong> to help you find the sessions you want to attend (works on desktops too). </p>
+<p>If you are looking for materials that are not posted on this site we encourage you to
+contact the presenter directly. The full program book including contact information
+for presenters can be found under the 2012 Program tab.</p>
 
-<br />
-<hr style="clear:both;">
-<img src="images/NYTC_Photo_th.jpg" alt="National Youth Transitions Center" style="padding-right:2em; float:left;" />
-<h4><a href="tour.php">Please join us for a tour of the new National Youth Transitions Center. (closed)</a></h4>
-<p>Tours are available on Tuesday, May 29th at 2:00, 3:00 and 4:00 and will last approximately 1 hour. Please plan to arrive 15 minutes prior to the start of your tour.  <a href="tour.php">Pre-registration is required and space is limited.</a>  </p>
-<hr />
+<p>Opening Session [coming soon]</p>
 
+<h4>Valerie Jarrett</h4>
+<p>Opening remarks by Valerie Jarrett, Sr.Advisor to President Obama and Chair
+of the White House Council on Women and Girls. Introduced by Alexa Posny,
+Assistant Secretary for Office of Special Education and Rehabilitative Services at
+the U.S. Department of Education. [video coming soon]
+</p>
+<h4>Alexa Posny</h4>
 
-<p>This important conference will provide a forum for the development of an action 
-agenda, bring together critical partners in the transition community to exchange 
-innovative ideas and approaches; demonstrate knowledge gained from policy 
-implementation; share transition practices and research findings; and promote and 
-facilitate the development of networks and relationships.</p>
+<p>Alexa Posny, Assistant Secretary for Office of Special Education and Rehabilitative
+Services at the U.S. Department of Education.</p>
 
-<p>This exciting national conference will bring together:
-<ul>
-<li>Youth and young adults</li>
-<li>Family members/advocates/caregivers</li>
-<li>Educators</li>
-<li>Vocational rehabilitation professionals</li>
-<li>Employment and training professionals</li>
-<li>Researchers</li>
-<li>State and federal officials</li>
-<li>Leaders in the transition community</li>
-<li>Disability service staff</li>
-<li>Student development personnel</li>
-<li>Behavioral health professionals</li>
-<li>Independent Living Community</li>
+<h4>Personal Perspectives on Transition: Voices that Matter</h4>
 
-</ul></p>
-<p>Don't miss this opportunity to access the latest information available in the field 
-that can be used to improve the transition from school to adult life for young 
-adults with disabilities.</p>
+<p>Vander Cherry, U.S. Department of Education
+Michaela Fissel, Graduate Student, Central CT State University
+Andraea LaVant, Inclusion Specialist, Girl Scout Council of the Nation’s Capital
+Facilitated by Sue Swenson, Deputy Assistant Secretary, Office of Special Education
+and Rehabilitative Services at the U.S. Department of Education.</p>
 
+<h3>Keynote Presentation</h3>
+
+<h4>Preparing Today’s Youth for Tomorrow’s Workforce</h4>
+
+<p>Ann Wilson Cramer, Director IBM Americas, IBM Corporate Citizenship and
+Corporate Affairs. Introduced by William Kiernan, ICI and Stephanie Powers,
+Council on Foundations.</p>
 
 			</article>
 			
